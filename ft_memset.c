@@ -14,11 +14,11 @@
 
 /*void *ft_memset(void *b, int c, size_t len)
 {
-    
+
 }*/
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
-    //printf("%d\n", ft_memset(av[1], 5, 4));
-    printf("%d\n", memset( 5, 4));
+	// printf("%d\n", ft_memset(av[1], 5, 4));
+	printf("%d\n", memset(5, 4));
 }

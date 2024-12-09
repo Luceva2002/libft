@@ -6,15 +6,15 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:05:05 by luevange          #+#    #+#             */
-/*   Updated: 2024/11/25 18:37:52 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/09 14:44:57 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    size_t	i;
+	size_t	i;
 
 	i = 0;
 	while ((s1[i] || s2[i]) && i < n)
@@ -34,4 +34,4 @@ int     ft_strncmp(const char *s1, const char *s2, size_t n)
 		printf("%d", strncmp(av[1], av[2], 7));
 	}
 	return (0);	
-}
+}*/

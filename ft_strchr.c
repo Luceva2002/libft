@@ -31,4 +31,5 @@ char	*ft_strchr(const char *str, int c)
 	int c = 'c';
 	printf("%s\n", ft_strchr(av[1], c));
 	printf("%s", strchr(av[1], c));
-}*/z
+}*/
+z
