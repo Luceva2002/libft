@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:23:38 by luevange          #+#    #+#             */
-/*   Updated: 2024/11/27 17:28:40 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/10 12:23:05 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (0);
 }
 
-/*int main(int ac, char **av)
+int	main(int ac, char **av)
 {
-	int c;
+	int	c;
 
 	c = 'c';
 	printf("%d\n", ft_memchr(, c, 10));
 	printf("%d\n", memchr(, c, 10));
-	return(0);
-}*/
+	return (0);
+}
