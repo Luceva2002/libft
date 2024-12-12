@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:08:38 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/10 12:23:27 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/10 15:41:37 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,21 @@
 
 void	*ft_memset(void *dest, int c, size_t len)
 {
-	ft_strlen((const char *)dest);
+	size_t	i;
+
+	i = 0;
+	while (i < len)
+	{
+		((char *)dest)[i] = c;
+		i++;
+	}
+	return (dest);
 }
 
-int	main(int ac, char **av)
+/*int	main()
 {
-	printf("%d\n", ft_memset(av[1], 5, 4));
-	printf("%d\n", memset());
-}
+	char array[10] = "ciccio";
+	printf("%s\n", (char *)memset(array, '8', 4));
+	printf("%s\n", (char *)ft_memset(array, '8', 4));
+	return(0);
+}*/

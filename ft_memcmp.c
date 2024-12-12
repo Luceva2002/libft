@@ -1,37 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 16:23:38 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/12 15:14:10 by luevange         ###   ########.fr       */
+/*   Created: 2024/12/12 15:12:38 by luevange          #+#    #+#             */
+/*   Updated: 2024/12/12 15:40:38 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
 
-	i = 0;
-	while (i < n)
-	{
-		if (((unsigned char *)s)[i] == (unsigned char)c)
-			return ((void *)((unsigned char *)s + i));
-		i++;
-	}
-	return (0);
 }
 
-/*int	main(int ac, char **av)
+int	main(void)
 {
-	int	c;
 
-	c = 'c';
-	printf("%d\n", ft_memchr(, c, 10));
-	printf("%d\n", memchr(, c, 10));
-	return (0);
-}*/
+}
