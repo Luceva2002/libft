@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 18:59:57 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/12 15:13:02 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/12 17:11:59 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,37 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int				i;
-	unsigned int	array[];
-	unsigned int	a;
-	unsigned int	b;
+	size_t				i;
+	unsigned char		*a;
+	const unsigned char	*b;
 
-	i = 0;
 	a = (unsigned char *)dest;
-	b = (unsigned char *)src;
-	while (i < n)
+	b = (const unsigned char *)src;
+	if (!a || !b)
+		return (NULL);
+	if (dest < src)
 	{
-		array = b[i];
-		a[i] = array;
-		i++;
+		ft_memcpy(dest, src, n);
 	}
+	else if (dest > src)
+	{
+		i = n;
+		while (i > 0)
+		{
+			i--;
+			a[i] = b[i];
+		}
+	}
+	return (dest);
 }
 
-/*char dest[ MAX_LEN ] = "This is the source string";
-char	src[ MAX_LEN ] = "This is the target string";
-
-int main (void)
+/*int main(void)
 {
-  printf( "Before memcpy, target is \"%s\"\n", src );
-  ft_memmove( dest, src, 4);
-  printf( "After memcpy, target becomes \"%s\"\n", src );
+	char src[50];
+	char dest[50];
+
+	printf("Before memmove, dest is \"%s\"\n", dest);
+	ft_memmove(dest, src, 13); // Copia "Hello, world!" (+ il terminatore nullo)
+	printf("After memmove, dest becomes \"%s\"\n", dest);
+	return (0);
 }*/
