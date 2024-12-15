@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/13 16:00:19 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/15 12:16:51 by luevange         ###   ########.fr       */
+/*   Created: 2024/12/15 16:58:20 by luevange          #+#    #+#             */
+/*   Updated: 2024/12/15 17:14:31 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char *ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	mem;
-	char	*array;
-	char	*zero;
-	int		i;
-
-	mem = size * nmemb;
-	i = 0;
-	if (size == 0)
-		return (NULL);
-	array = (char *)malloc(mem);
-	while (i < mem)
-	{
-		array[i] = '0';
-		i++;
-	}
-	return ((void *)array);
+    int i;
+    char *str;
+    
+    str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+    ft_strlcpy(str, s1, ft_strlen(s1));
+    ft_strlcpy(str + ft_strlen(s1), s2, ft_strlen(s2));
+    str[ft_strlen(s1) + ft_strlen(s2)] = '\0';
+    return(str);
 }
-
-/*int     main()
+int main (int ac, char **av)
 {
-	printf("%s\n", (char *)ft_calloc(2, 4));
-	printf("%s\n", (char *)calloc(2, 4));
-	return (0);
-}*/
+    printf("%s\n", ft_strjoin((const char *)av[1], (const char *)av[2]));
+}
