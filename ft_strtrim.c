@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 15:25:24 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/16 13:41:36 by luevange         ###   ########.fr       */
+/*   Created: 2024/12/16 11:19:39 by luevange          #+#    #+#             */
+/*   Updated: 2024/12/16 13:41:44 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s1)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
+	int		i;
+	int		j;
+	char	*str;
 
 	i = 0;
-	while (s1[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	j = 0;
+	str = malloc(ft_strlen(s1));
 }
-
-/*
-int     main(int ac, char **av)
 {
-	printf("%zu", ft_strlen(av[1]));
-}*/
+	printf("%s", ft_strtrim((char const *)av[1], (char const *)av[2]));
+}
