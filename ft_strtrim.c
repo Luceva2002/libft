@@ -14,22 +14,22 @@
 
 int	findchar(char const *str, char c)
 {
-	while(*str)
+	while (*str)
 	{
 		if (*str == c)
 			return (1);
-		str ++;
+		str++;
 	}
 	return (0);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int i;
-	int j;
-	int k;
-	char *array;
-	
+	int		i;
+	int		j;
+	int		k;
+	char	*array;
+
 	k = 0;
 	i = 0;
 	j = ft_strlen(s1) - 1;
@@ -43,8 +43,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (i < j + 1)
 	{
 		array[k] = s1[i];
-		k	++;
-		i++; 
+		k++;
+		i++;
 	}
 	return (array);
 }

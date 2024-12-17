@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:28:33 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/17 15:16:44 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/17 17:00:07 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ char	*ft_strrchr(const char *str, int c)
 	return (0);
 }
 
-int	main(int ac, char **av)
+/* int	main(int ac, char **av)
 {
 	int c = 'c';
 	printf("%s\n", ft_strrchr(av[1], c));
 	printf("%s", strrchr(av[1], c));
-}
+} */
