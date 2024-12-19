@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 15:57:44 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/15 16:56:20 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/18 17:30:20 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (s2);
 }
 
-/*int	main(int ac, char **av)
+/* int	main(int ac, char **av)
 {
 	printf("%s", ft_substr((const char *)av[1], 2, 10));
-}*/
+} */
