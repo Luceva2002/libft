@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:43 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/20 15:55:04 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/20 16:00:49 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,25 +22,26 @@ int	count_word(char const *str, char c)
 	while (str[i])
 	{
 		if (str[i] != c)
-		{ 
-			count ++;
+		{
+			count++;
 			while (str[i] != c && str[i] != '\0')
-				i ++;
+				i++;
 		}
 		else
-			i ++;
+			i++;
 	}
 	return (count);
 }
+
 int	charcount(char const *str, char c, int i)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	while (str[i] != c && str[i] != '\0')
 	{
-	 	i ++;
-		len ++;
+		i++;
+		len++;
 	}
 	return (len);
 }
@@ -48,9 +49,9 @@ int	charcount(char const *str, char c, int i)
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	int     k;
-	char    **temp;
-	
+	int		k;
+	char	**temp;
+
 	k = 0;
 	i = 0;
 	temp = malloc(sizeof(char *) * (count_word(s, c) + 1));
@@ -60,11 +61,11 @@ char	**ft_split(char const *s, char c)
 		{
 			temp[k] = malloc((charcount(s, c, i) + 1) * sizeof(char));
 			ft_strlcpy(temp[k], &s[i], charcount(s, c, i));
-			k ++;
+			k++;
 			i += charcount(s, c, i);
 		}
 		else
-			i ++;
+			i++;
 	}
 	temp[k] = NULL;
 	return (temp);
@@ -72,13 +73,13 @@ char	**ft_split(char const *s, char c)
 /* int	main(int ac, char **av)
 {
 	char **array;
-	
+
 	(void)ac;
 	int	i = 0;
 	array = ft_split(av[1], 'c');
 	while (array[i])
 	{
-		printf("%s\n", *array);
+		printf("%s\n", array[i]);
 		i ++;
 	}
 	i = 0;
