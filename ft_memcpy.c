@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 16:20:32 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/12 15:15:10 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:29:35 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*b;
 	unsigned char	*a;
 

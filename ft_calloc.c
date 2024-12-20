@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 16:00:19 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/15 12:16:51 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:27:30 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	mem;
 	char	*array;
-	char	*zero;
-	int		i;
+	size_t	i;
 
 	mem = size * nmemb;
 	i = 0;

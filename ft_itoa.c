@@ -6,19 +6,8 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:05:27 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/19 16:49:12 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:40:16 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_itoa(int n)
-{
-	char	*tem;
-
-	tmp = malloc(sizeof(int) *);
-}
-int	main(void)
-{
-	int i = 6;
-}

@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 16:58:20 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/15 17:24:15 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:23:58 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
 	char	*str;
 
 	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
