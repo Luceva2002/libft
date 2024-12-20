@@ -6,54 +6,87 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:43 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/19 18:44:01 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/20 15:55:04 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	count_word(char const *str, char c)
+int	count_word(char const *str, char c)
 {
-	size_t	i;
-	size_t	count;
+	int	i;
+	int	count;
 
 	i = 0;
 	count = 0;
 	while (str[i])
 	{
 		if (str[i] != c)
-		{
-			count++;
+		{ 
+			count ++;
 			while (str[i] != c && str[i] != '\0')
-				i++;
+				i ++;
 		}
 		else
-			i++;
+			i ++;
 	}
 	return (count);
 }
-size_t	charcount(char const *str, char c, size_t i)
+int	charcount(char const *str, char c, int i)
 {
-	while (str[i] != c)
-		i++;
-	return (i);
+	int len;
+
+	len = 0;
+	while (str[i] != c && str[i] != '\0')
+	{
+	 	i ++;
+		len ++;
+	}
+	return (len);
 }
+
 char	**ft_split(char const *s, char c)
 {
-	char const	**temp;
-	int			*i;
-	size_t		p;
-
-	p = count_word(s, c);
-	temp = malloc(sizeof(char) * count_word(s, c) + 1);
-	while (*s)
+	int		i;
+	int     k;
+	char    **temp;
+	
+	k = 0;
+	i = 0;
+	temp = malloc(sizeof(char *) * (count_word(s, c) + 1));
+	while (s[i])
 	{
-		if (s[i] != c)
-			temp[0] = malloc((charcount(s, c, i) + 1) * sizeof(char));
-		k++;
+		if (s[i] != c && k < count_word(s, c))
+		{
+			temp[k] = malloc((charcount(s, c, i) + 1) * sizeof(char));
+			ft_strlcpy(temp[k], &s[i], charcount(s, c, i));
+			k ++;
+			i += charcount(s, c, i);
+		}
+		else
+			i ++;
 	}
+	temp[k] = NULL;
+	return (temp);
 }
-int	main(int ac, char **av)
+/* int	main(int ac, char **av)
 {
-	printf("%zu\n", count_word((char const *)av[1], 'c'));
-}
+	char **array;
+	
+	(void)ac;
+	int	i = 0;
+	array = ft_split(av[1], 'c');
+	while (array[i])
+	{
+		printf("%s\n", *array);
+		i ++;
+	}
+	i = 0;
+	while(array[i])
+	{
+		free(array[i]);
+		i++;
+	}
+	free(array);
+	return (0);
+} */
