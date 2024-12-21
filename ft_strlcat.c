@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 17:06:05 by luevange          #+#    #+#             */
-/*   Updated: 2024/11/22 18:16:39 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/21 13:24:07 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 	i = 0;
 	j = 0;
-	if ((size_t)ft_strlen(dest) > size)
+	if (ft_strlen(dest) > size)
 		return (ft_strlen(src) + size);
-	while (dest[i] != '\0' && i < size)
+	else
+		
+	while (dest[i] != '\0' && i < size && size > 0)
 		i++;
 	while ((i + j + 1) < size && src[j] != '\0')
 	{
@@ -32,7 +34,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (i + ft_strlen(src));
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	s1[20] = "123456789";
 	char	s2[20] = "poppo";
@@ -40,4 +42,5 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 	printf("dest: %s len: %zu\n", s1, ft_strlcat(s1, s2, 20));
 	printf("dest: %s len: %zu\n", s3, strlcat(s3, s2, 20));
-}*/
+}
+ */
