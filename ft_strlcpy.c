@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 12:50:03 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/20 15:36:30 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/21 10:02:48 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 
 	i = 0;
 	if (size == 0)
-		return (0);
-	while (src[i] && i < size)
+		return (ft_strlen(src));
+	while (src[i] && i < size - 1)
 	{
 		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
-	return (i);
+	return (ft_strlen(src));
 }
 
 /*int	main(int ac, char **av)
