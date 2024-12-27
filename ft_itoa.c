@@ -6,11 +6,13 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:05:27 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/23 16:56:53 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:50:57 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+#include <limits.h>
 
 int	cnt_ln(int nb)
 {
@@ -55,7 +57,10 @@ char	*ft_itoa(int nb)
 	if (nb < 0)
 	{
 		if (nb == -2147483648)
+		{
+			free(s);
 			return (min_int(s));
+		}
 		s[i++] = '-';
 		nb = -nb;
 	}
@@ -68,22 +73,11 @@ char	*ft_itoa(int nb)
 	return (s);
 }
 
-/* int main()
+int main()
 {
-	int numbers[] = {0, 42, -42, 123456, -123456, -2147483648, 2147483647};
-	char *result;
-	for (int i = 0; i < 7; i++)
-	{
-		result = ft_itoa(numbers[i]);
-		if (result)
-		{
-			printf("ft_itoa(%d) = %s\n", numbers[i], result);
-			free(result);
-		}
-		else
-		{
-			printf("Errore di allocazione della memoria per %d.\n", numbers[i]);
-		}
-	}
+	char	*s = ft_itoa(INT_MAX);
+	printf("%s\n", s);
+	free(s);
 	return (0);
-} */
+}
+

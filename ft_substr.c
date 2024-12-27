@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 15:57:44 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/24 09:52:15 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:56:01 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	s2[i] = '\0';
 	return (s2);
+}
+
+int	main(void)
+{
+	char *s = ft_substr("tripouille", 100, 1);
+	printf("%s\n", s);
+	free(s);
+	return (0);
 }
