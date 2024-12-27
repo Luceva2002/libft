@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 15:12:38 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/12 19:00:43 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:18:28 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*int	main(int ac, char **av)
-{
-	printf("%d\n", ft_memcmp(av[1], av[2], 6));
-}*/

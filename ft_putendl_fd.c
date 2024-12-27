@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 15:19:16 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/26 16:07:19 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:18:53 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,3 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
-
-/* int	main(int ac, char **av)
-{
-	ft_putendl_fd(av[1], 1);
-	return (0);
-} */

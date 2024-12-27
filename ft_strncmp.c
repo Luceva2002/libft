@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:05:05 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/22 22:57:44 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:42 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac == 3)
-	{
-		printf("%d\n", ft_strncmp(av[1], av[2], 7));
-		printf("%d", strncmp(av[1], av[2], 7));
-	}
-	return (0);	
-} */

@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:39:09 by luevange          #+#    #+#             */
-/*   Updated: 2024/11/14 16:40:25 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:17:23 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * res);
 }
-
-/*int main(int ac, char **av)
-{
-	if (ac == 2)
-		printf("%d\n", ft_atoi(av[1]));
-		printf("%d", atoi(av[1]));
-}*/

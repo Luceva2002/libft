@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 16:58:20 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/23 23:28:12 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:22 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	else
 		return (NULL);
 }
-/* int	main(int ac, char **av)
-{
-	printf("%s\n", ft_strjoin((const char *)av[1], (const char *)av[2]));
-} */

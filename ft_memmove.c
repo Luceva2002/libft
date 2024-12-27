@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 18:59:57 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/12 17:11:59 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:18:39 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*int main(void)
-{
-	char src[50];
-	char dest[50];
-
-	printf("Before memmove, dest is \"%s\"\n", dest);
-	ft_memmove(dest, src, 13); // Copia "Hello, world!" (+ il terminatore nullo)
-	printf("After memmove, dest becomes \"%s\"\n", dest);
-	return (0);
-}*/

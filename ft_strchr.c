@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:38:20 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/26 22:04:35 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:11 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)str);
 	return (NULL);
 }
-
-/*int main(int ac, char **av)
-{
-	int c = 'c';
-	printf("%s\n", ft_strchr(av[1], c));
-	printf("%s", strchr(av[1], c));
-}*/

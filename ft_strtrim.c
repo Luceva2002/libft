@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 11:19:39 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/23 16:44:24 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:56 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,23 +49,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	array[k] = '\0';
 	return (array);
 }
-/* int main(void)
-{
-	char *s1 = "  \t\n  Hello, World! \t\n  ";
-	char *set = " \t\n";  // Caratteri da rimuovere
-	char *trimmed_str;
-
-	trimmed_str = ft_strtrim(s1, set);
-	if (trimmed_str)
-	{
-		printf("Stringa originale: \"%s\"\n", s1);
-		printf("Stringa trimmata: \"%s\"\n", trimmed_str);
-		free(trimmed_str);  // Non dimenticare di liberare la memoria
-	}
-	else
-	{
-		printf("Errore nella memoria\n");
-	}
-
-	return (0);
-} */

@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 18:43:20 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/25 22:20:35 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:19 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		}
 	}
 }
-/* int	main(int ac, char **av)
-{
-	ft_striteri(av[1], ft_putchar);
-} */

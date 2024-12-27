@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 12:35:54 by luevange          #+#    #+#             */
-/*   Updated: 2024/11/11 15:48:35 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:17:56 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,3 @@ int	ft_isalpha(int i)
 	else
 		return (0);
 }
-
-/*int     main(int ac, char **av)
-{
-	printf("%d", ft_isalpha(av[1][0]));
-}*/

@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 17:02:19 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/27 16:18:50 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:18:57 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,3 @@ void	ft_putnbr_fd(int n, int fd)
 	write(fd, s, ft_strlen(s));
 	free(s);
 }
-
-/* int	main(void)
-{
-	ft_putnbr_fd(42, 1);
-	return (0);
-} */

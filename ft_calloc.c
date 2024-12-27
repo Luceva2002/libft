@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 16:00:19 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/27 15:48:01 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:17:48 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
-/*int     main()
-{
-	printf("%s\n", (char *)ft_calloc(2, 4));
-	printf("%s\n", (char *)calloc(2, 4));
-	return (0);
-}*/

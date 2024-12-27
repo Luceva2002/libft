@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:25:24 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/16 13:41:36 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:33 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ size_t	ft_strlen(const char *s1)
 	}
 	return (i);
 }
-
-/*
-int     main(int ac, char **av)
-{
-	printf("%zu", ft_strlen(av[1]));
-}*/

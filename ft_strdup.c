@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 14:31:28 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/23 13:56:38 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:15 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,3 @@ char	*ft_strdup(const char *s)
 	s2[i] = '\0';
 	return (s2);
 }
-
-/*int main(int ac, char **av)
-{
-	printf("%s", ft_strdup(av[1]));
-}*/

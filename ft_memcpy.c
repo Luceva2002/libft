@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 16:20:32 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/20 17:29:35 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:18:34 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*#define MAX_LEN 80
-
-char	source[ MAX_LEN ] = "This is the source string";
-char	target[ MAX_LEN ] = "This is the target string";
-
-int	main(void)
-{
-  printf( "Before memcpy, target is \"%s\"\n", target );
-  ft_memcpy( target, source, sizeof(source));
-  printf( "After memcpy, target becomes \"%s\"\n", target );
-}*/

@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 15:31:54 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/24 18:45:28 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 18:19:36 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-/* int	main(int ac, char **av)
-{
-	printf("%s\n", ft_strmapi(av[1], ft_putchar));
-} */
