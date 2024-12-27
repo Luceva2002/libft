@@ -6,12 +6,11 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:05:27 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/27 16:50:57 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 17:27:49 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 #include <limits.h>
 
 int	cnt_ln(int nb)
@@ -38,6 +37,7 @@ int	cnt_ln(int nb)
 
 char	*min_int(char *s)
 {
+	free(s);
 	s = malloc(sizeof(char) * 12);
 	ft_strlcpy(s, "-2147483648", 12);
 	return (s);
@@ -57,10 +57,7 @@ char	*ft_itoa(int nb)
 	if (nb < 0)
 	{
 		if (nb == -2147483648)
-		{
-			free(s);
 			return (min_int(s));
-		}
 		s[i++] = '-';
 		nb = -nb;
 	}
@@ -73,11 +70,13 @@ char	*ft_itoa(int nb)
 	return (s);
 }
 
-int main()
+/* int	main(void)
 {
-	char	*s = ft_itoa(INT_MAX);
+	char	*s;
+
+	s = ft_itoa(INT_MAX);
 	printf("%s\n", s);
 	free(s);
 	return (0);
 }
-
+ */
