@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 18:14:51 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/26 18:16:15 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 15:48:29 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 # define LIBFT_H
 
 # include <stdio.h>
-//# include <bsd/string.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <stdint.h>
+//# include <bsd/string.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);

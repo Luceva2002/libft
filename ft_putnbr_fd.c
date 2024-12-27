@@ -6,7 +6,7 @@
 /*   By: luevange <luevange@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 17:02:19 by luevange          #+#    #+#             */
-/*   Updated: 2024/12/26 22:36:40 by luevange         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:18:50 by luevange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@ void	ft_putnbr_fd(int n, int fd)
 	s = ft_itoa(n);
 	if (!s)
 		return ;
-	while (*s)
-	{
-		write(fd, s, 1);
-		s++;
-	}
+	write(fd, s, ft_strlen(s));
 	free(s);
 }
+
+/* int	main(void)
+{
+	ft_putnbr_fd(42, 1);
+	return (0);
+} */
